@@ -1,0 +1,1 @@
+import { useChart } from '../hooks/useChart'; import { PageHeader } from '../components/layout/PageHeader'; import { DashaTimeline } from '../components/dasha/DashaTimeline'; export default function Dasha(){const c=useChart()!; return <><PageHeader title="Vimshottari Dasha"/><DashaTimeline items={c.vedic.dashas}/></>}

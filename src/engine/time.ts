@@ -1,0 +1,3 @@
+import { DateTime } from 'luxon'; import tzlookup from 'tz-lookup'; import { SiderealTime, AstroTime } from 'astronomy-engine';
+import type { BirthData } from './types';
+export function resolveBirth(b:BirthData){const zone=b.zone||tzlookup(b.lat,b.lon); const time=b.timeUnknown?'12:00':b.time; const local=DateTime.fromISO(`${b.date}T${time}`,{zone}); if(!local.isValid) throw new Error(local.invalidExplanation||'Invalid birth time'); const utc=local.toUTC(); const jd=2440587.5+utc.toMillis()/86400000; const astro=new AstroTime(utc.toJSDate()); const ramc=((15*SiderealTime(astro)+b.lon)%360+360)%360; return {zone,local,utc,jd,astro,ramc,timeUnknown:!!b.timeUnknown};}

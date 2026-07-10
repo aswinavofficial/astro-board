@@ -1,0 +1,1 @@
+export function TimeScrubber({date,setDate}:{date:Date;setDate:(d:Date)=>void}){return <div className="flex gap-2"><input className="field" type="date" value={date.toISOString().slice(0,10)} onChange={e=>setDate(new Date(e.target.value))}/><button className="btn" onClick={()=>setDate(new Date())}>Now</button></div>}

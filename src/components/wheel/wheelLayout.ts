@@ -1,0 +1,1 @@
+export function point(angle:number,r:number){const a=(180-angle)*Math.PI/180; return {x:Math.cos(a)*r,y:Math.sin(a)*r}} export function wheelAngle(lon:number,asc=0){return ((lon-asc+180)%360+360)%360}

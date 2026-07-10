@@ -1,0 +1,1 @@
+import { nakshatra } from './nakshatra'; export function panchanga(sun:number,moon:number){const delta=((moon-sun)%360+360)%360; return {tithi:Math.floor(delta/12)+1,paksha:delta<180?'Shukla':'Krishna',yoga:Math.floor(((sun+moon)%360)/(360/27))+1,karana:Math.floor(delta/6)+1,nakshatra:nakshatra(moon)};}

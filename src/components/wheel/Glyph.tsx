@@ -1,0 +1,1 @@
+export function Glyph({x,y,children}:{x:number;y:number;children:React.ReactNode}){return <text x={x} y={y} textAnchor="middle" dominantBaseline="middle" fontSize="22" fill="#f7d27e">{children}</text>}
