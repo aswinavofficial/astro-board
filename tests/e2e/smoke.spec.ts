@@ -1,0 +1,2 @@
+import { test, expect } from '@playwright/test';
+test('onboards and visits routes', async ({ page }) => { await page.goto('/swiggy-buddy/#/'); await page.getByRole('button', { name: /New Delhi/ }).click(); await page.getByRole('button', { name: /Enter dashboard/ }).click(); await expect(page.getByText('Big Three')).toBeVisible(); for (const path of ['western','planets','aspects','vedic','dasha','sky','insights','settings']) { await page.goto(`/swiggy-buddy/#/${path}`); await expect(page.locator('h2')).toBeVisible(); } });

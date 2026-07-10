@@ -1,0 +1,1 @@
+export function EmptyState({title,children}:{title:string;children?:React.ReactNode}){return <div className="glass rounded-3xl p-8 text-center"><h2 className="font-serif text-4xl text-gold">{title}</h2><p className="mt-3 text-white/70">{children}</p></div>}

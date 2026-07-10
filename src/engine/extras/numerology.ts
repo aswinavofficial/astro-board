@@ -1,0 +1,1 @@
+function sum(n:string):number{let s=[...n.replace(/\D/g,'')].reduce((a,c)=>a+Number(c),0); return [11,22,33].includes(s)||s<10?s:sum(String(s))} export function numerology(date:string,name=''){return {lifePath:sum(date),birthday:Number(date.slice(-2)),nameNumber:sum(name)}}

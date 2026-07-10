@@ -1,0 +1,1 @@
+export function biorhythm(birth:string,on=new Date()){const age=(+on-+new Date(birth))/864e5; return {physical:Math.sin(2*Math.PI*age/23),emotional:Math.sin(2*Math.PI*age/28),intellectual:Math.sin(2*Math.PI*age/33)}}

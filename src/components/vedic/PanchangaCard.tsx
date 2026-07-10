@@ -1,0 +1,1 @@
+export function PanchangaCard({p}:{p:any}){return <div className="grid gap-2 text-sm"><b>Tithi {p.tithi} {p.paksha}</b><span>Nakshatra {p.nakshatra.name} pada {p.nakshatra.pada}</span><span>Yoga {p.yoga} · Karana {p.karana}</span></div>}

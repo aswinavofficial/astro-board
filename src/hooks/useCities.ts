@@ -1,0 +1,1 @@
+import cities from '../data/cities.min.json'; export type City=[string,string,string,number,number,number]; export function searchCities(q:string){const s=q.toLowerCase(); return (cities as City[]).filter(c=>(c[0]+' '+c[1]+' '+c[2]).toLowerCase().includes(s)).slice(0,8)}

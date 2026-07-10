@@ -1,0 +1,1 @@
+export function Starfield(){return <div className="pointer-events-none fixed inset-0 -z-10 opacity-60" style={{backgroundImage:'radial-gradient(#fff 1px, transparent 1px)',backgroundSize:'48px 48px'}}/>}

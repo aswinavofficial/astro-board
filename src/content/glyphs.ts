@@ -1,0 +1,1 @@
+export const signGlyphs=['♈','♉','♊','♋','♌','♍','♎','♏','♐','♑','♒','♓']; export const planetGlyphs:any={Sun:'☉',Moon:'☽',Mercury:'☿',Venus:'♀',Mars:'♂',Jupiter:'♃',Saturn:'♄',Uranus:'♅',Neptune:'♆',Pluto:'♇',Rahu:'☊',Ketu:'☋',Lilith:'⚸',Fortune:'⊗'};

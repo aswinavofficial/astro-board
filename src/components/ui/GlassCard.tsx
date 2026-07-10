@@ -1,0 +1,1 @@
+import type { PropsWithChildren } from 'react'; export function GlassCard({children,className=''}:PropsWithChildren<{className?:string}>){return <section className={`glass rounded-3xl p-5 ${className}`}>{children}</section>}
