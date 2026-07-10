@@ -1,0 +1,1 @@
+import { useChart } from '../hooks/useChart'; import { PageHeader } from '../components/layout/PageHeader'; import { NatalWheel } from '../components/wheel/NatalWheel'; export default function WesternChart(){const chart=useChart()!; return <><PageHeader title="Western Natal Wheel"/><NatalWheel chart={chart}/></>}

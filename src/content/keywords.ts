@@ -1,0 +1,1 @@
+export const disclaimer='Cosmos is a reflective astrology dashboard, not medical, legal, financial or deterministic advice.'; export const themes:any={Sun:'vitality',Moon:'instinct',Mercury:'mind',Venus:'affection',Mars:'drive',Jupiter:'growth',Saturn:'discipline'};

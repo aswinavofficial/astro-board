@@ -1,0 +1,1 @@
+import { useProfiles } from '../../state/profiles'; export function ProfileSwitcher(){const {profiles,active,setActive}=useProfiles(); return <select className="field max-w-xs" value={active} onChange={e=>setActive(Number(e.target.value))}>{profiles.map((p,i)=><option key={i} value={i}>{p.name}</option>)}</select>}

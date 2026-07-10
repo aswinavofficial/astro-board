@@ -1,0 +1,1 @@
+export function DashaTimeline({items}:{items:any[]}){return <div className="grid gap-3">{items.map(d=><div key={d.from} className="rounded-2xl bg-white/10 p-3"><b>{d.lord} Mahadasha</b><div className="text-sm text-white/65">{d.from.slice(0,10)} → {d.to.slice(0,10)} · {d.years}y</div></div>)}</div>}

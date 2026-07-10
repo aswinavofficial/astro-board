@@ -1,0 +1,1 @@
+const animals=['Rat','Ox','Tiger','Rabbit','Dragon','Snake','Horse','Goat','Monkey','Rooster','Dog','Pig']; const elems=['Wood','Fire','Earth','Metal','Water']; export function chinese(date:string){const y=Number(date.slice(0,4)); return {animal:animals[(y-4)%12],element:elems[Math.floor(((y-4)%10)/2)]};}

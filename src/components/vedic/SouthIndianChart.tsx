@@ -1,0 +1,1 @@
+export function SouthIndianChart({chart}:{chart:any}){return <div className="grid grid-cols-4 gap-1">{Array.from({length:16},(_,i)=><div key={i} className="min-h-20 rounded-xl border border-white/10 p-2 text-xs">{i===5?'':chart.planets.filter((p:any)=>Math.floor(p.lon/30)===i%12).map((p:any)=>p.id).join(' ')}</div>)}</div>}

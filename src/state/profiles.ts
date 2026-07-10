@@ -1,0 +1,2 @@
+import { create } from 'zustand'; import { persist } from 'zustand/middleware'; import type { BirthData } from '../engine';
+type S={profiles:BirthData[];active:number;setProfiles:(p:BirthData[])=>void;add:(p:BirthData)=>void;setActive:(i:number)=>void}; export const useProfiles=create<S>()(persist((set)=>({profiles:[],active:0,setProfiles:(profiles)=>set({profiles}),add:(p)=>set(s=>({profiles:[...s.profiles,p],active:s.profiles.length})),setActive:(active)=>set({active})}),{name:'cosmos-profiles'}));

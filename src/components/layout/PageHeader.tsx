@@ -1,0 +1,1 @@
+export function PageHeader({title,eyebrow}:{title:string;eyebrow?:string}){return <header className="mb-6"><p className="uppercase tracking-[.4em] text-gold/70 text-xs">{eyebrow||'Cosmos'}</p><h2 className="font-serif text-5xl text-gold">{title}</h2></header>}
