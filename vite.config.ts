@@ -2,8 +2,12 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
+const githubPagesBase = process.env.GITHUB_REPOSITORY
+  ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/`
+  : '/astro-board/';
+
 export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/swiggy-buddy/' : '/',
+  base: command === 'build' ? githubPagesBase : '/',
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {
